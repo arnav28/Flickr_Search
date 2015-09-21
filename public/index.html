@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Flickr Search</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="flex-container">
+    <!-- Search Form -->
+    <section id="search" class="center">
+      <form id="search-form" action="/search">
+        <img src="images/Flickr_logo.png" alt="Flickr Logo" height="100" width="380" id="logo" />
+        <input type="text" placeholder="" class="input" id="searchBox" autofocus required>
+        <button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-search"></i> Search</button>
+      </form>
+    </section>
+    <!-- Controls -->
+    <div id="controls" style="display:none" class="center">
+      <button type="button" class="btn btn-sm btn-seconday" id="lightbox">Lightbox View</button>
+    </div>
+    <!-- Results (images) -->
+    <section id="results">
+      <i class="fa fa-refresh fa-spin fa-2x text-center" id="loading" style="display:none"></i>
+      <div id="gallery"></div>
+    </section>
+  </div>
+
+  <!-- Lightbox View -->
+  <div id="lightbox-container" class="center">
+    <div id="lightbox-gallery"></div>
+    <span class="prev"><i class="fa fa-angle-left"></i></span>
+    <span class="next"><i class="fa fa-angle-right"></i></span>
+  </div>
+  <div id="overlay"></div>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/lightbox.js"></script>
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</body>
+
+</html>
