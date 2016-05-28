@@ -1,5 +1,6 @@
 # Flickr_Search
-Search images on flickr
+
+Client side application for searching images using on flickr api
 
 URL : arnav.firebaseapp.com
 
